@@ -1,0 +1,32 @@
+seed: 42
+n_rows: 1000
+
+tabular:
+  path: ../lab_01/data/processed/german_credit_mcar.csv
+  sha256: 94ccbae4b4dffc58f7c976732f3e274165ced549e20398f222dc36b5c8d15d48
+
+text_corpus:
+  archive: data/external/consumer_complaints.csv.zip
+  product: Consumer Loan
+  require_narrative: true
+  sample_out: data/raw/cfpb_consumer_loan_sample.csv
+
+payments:
+  clients_archive: data/external/application_test.csv.zip
+  installments_archive: data/external/installments_payments.csv.zip
+  sample_out: data/external/hc_installments_sample.csv
+  columns: [AMT_INSTALMENT, AMT_PAYMENT, DAYS_INSTALMENT, DAYS_LATE, NUM_INSTALMENT_NUMBER]
+
+signal:
+  value: DAYS_LATE
+  order: [DAYS_INSTALMENT, NUM_INSTALMENT_NUMBER]
+  extractor: {sr: 12.0, n_fft: 16, hop_length: 4, n_mels: 16, n_mfcc: 13, min_length: 2}
+
+autofe:
+  client_columns: [duration, credit_amount, age]
+  max_depth: 2
+  agg_primitives: [mean, max, count]
+  trans_primitives: [natural_logarithm, divide_numeric]
+
+
+  no_transform_payment_columns: [DAYS_INSTALMENT, DAYS_LATE]

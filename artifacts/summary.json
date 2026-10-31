@@ -1,0 +1,64 @@
+{
+  "heuristic_auc_test": 0.6896825396825397,
+  "heuristic_auc_full": 0.6607142857142858,
+  "sex_predictability_auc": {
+    "простір ЛР №1": 0.6744614159908453,
+    "повний простір ЛР №2": 0.642121498582019
+  },
+  "dfs": {
+    "input_features": 23,
+    "output_features": 147,
+    "new_features": 129,
+    "infinite_replaced_by_nan": 79
+  },
+  "signal_report": {
+    "total": 1000,
+    "empty": 18,
+    "too_short": 3,
+    "padded": 305,
+    "nonfinite_removed": 3
+  },
+  "vif_over_10": 160,
+  "vif_inf": 0,
+  "high_corr_pairs": 251,
+  "space_after_prep": [
+    700,
+    194
+  ],
+  "leaky_chosen": {
+    "LR": [
+      "numeric_continuous:credit_amount_div_duration",
+      "numeric_continuous:duration_div_age",
+      "installment_rate",
+      "checking_account",
+      "credit_history",
+      "purpose",
+      "savings_account",
+      "property",
+      "other_installment_plans",
+      "housing",
+      "complaint_company",
+      "duration_div_credit_amount",
+      "MAX_payments_AMT_INSTALMENT_div_MAX_payments_AMT_PAYMENT",
+      "duration_div_MAX_payments_AMT_INSTALMENT",
+      "duration_div_MEAN_payments_AMT_INSTALMENT"
+    ],
+    "RF": [
+      "credit_amount",
+      "checking_account_0-200 DM",
+      "checking_account_<0 DM",
+      "checking_account_no account",
+      "credit_history_critical account",
+      "purpose_car (used)",
+      "purpose_education",
+      "property_unknown/none",
+      "other_installment_plans_none",
+      "housing_own",
+      "complaint_company",
+      "NATURAL_LOGARITHM_age",
+      "COUNT_payments_div_duration",
+      "MAX_payments_AMT_INSTALMENT_div_duration",
+      "MEAN_payments_AMT_INSTALMENT_div_duration"
+    ]
+  }
+}

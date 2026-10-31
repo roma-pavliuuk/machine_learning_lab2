@@ -1,0 +1,1001 @@
+[
+ {
+  "name": "COUNT_payments",
+  "definition": "COUNT(payments)",
+  "base_columns": [
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT",
+  "definition": "MAX(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT",
+  "definition": "MAX(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_DAYS_INSTALMENT",
+  "definition": "MAX(payments.DAYS_INSTALMENT)",
+  "base_columns": [
+   "payments.DAYS_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_DAYS_LATE",
+  "definition": "MAX(payments.DAYS_LATE)",
+  "base_columns": [
+   "payments.DAYS_LATE"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT",
+  "definition": "MEAN(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT",
+  "definition": "MEAN(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_DAYS_INSTALMENT",
+  "definition": "MEAN(payments.DAYS_INSTALMENT)",
+  "base_columns": [
+   "payments.DAYS_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_DAYS_LATE",
+  "definition": "MEAN(payments.DAYS_LATE)",
+  "base_columns": [
+   "payments.DAYS_LATE"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "age_div_credit_amount",
+  "definition": "age / credit_amount",
+  "base_columns": [
+   "clients.age",
+   "clients.credit_amount"
+  ]
+ },
+ {
+  "name": "age_div_duration",
+  "definition": "age / duration",
+  "base_columns": [
+   "clients.age",
+   "clients.duration"
+  ]
+ },
+ {
+  "name": "credit_amount_div_age",
+  "definition": "credit_amount / age",
+  "base_columns": [
+   "clients.age",
+   "clients.credit_amount"
+  ]
+ },
+ {
+  "name": "credit_amount_div_duration",
+  "definition": "credit_amount / duration",
+  "base_columns": [
+   "clients.credit_amount",
+   "clients.duration"
+  ]
+ },
+ {
+  "name": "duration_div_age",
+  "definition": "duration / age",
+  "base_columns": [
+   "clients.age",
+   "clients.duration"
+  ]
+ },
+ {
+  "name": "duration_div_credit_amount",
+  "definition": "duration / credit_amount",
+  "base_columns": [
+   "clients.credit_amount",
+   "clients.duration"
+  ]
+ },
+ {
+  "name": "NATURAL_LOGARITHM_age",
+  "definition": "NATURAL_LOGARITHM(age)",
+  "base_columns": [
+   "clients.age"
+  ]
+ },
+ {
+  "name": "NATURAL_LOGARITHM_credit_amount",
+  "definition": "NATURAL_LOGARITHM(credit_amount)",
+  "base_columns": [
+   "clients.credit_amount"
+  ]
+ },
+ {
+  "name": "NATURAL_LOGARITHM_duration",
+  "definition": "NATURAL_LOGARITHM(duration)",
+  "base_columns": [
+   "clients.duration"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_AMT_PAYMENT",
+  "definition": "MAX(payments.AMT_INSTALMENT / AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_NUM_INSTALMENT_NUMBER",
+  "definition": "MAX(payments.AMT_INSTALMENT / NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_AMT_INSTALMENT",
+  "definition": "MAX(payments.AMT_PAYMENT / AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_NUM_INSTALMENT_NUMBER",
+  "definition": "MAX(payments.AMT_PAYMENT / NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_NATURAL_LOGARITHM_AMT_INSTALMENT",
+  "definition": "MAX(payments.NATURAL_LOGARITHM(AMT_INSTALMENT))",
+  "base_columns": [
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_NATURAL_LOGARITHM_AMT_PAYMENT",
+  "definition": "MAX(payments.NATURAL_LOGARITHM(AMT_PAYMENT))",
+  "base_columns": [
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_NATURAL_LOGARITHM_NUM_INSTALMENT_NUMBER",
+  "definition": "MAX(payments.NATURAL_LOGARITHM(NUM_INSTALMENT_NUMBER))",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_AMT_INSTALMENT",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER / AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_AMT_PAYMENT",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER / AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_AMT_PAYMENT",
+  "definition": "MEAN(payments.AMT_INSTALMENT / AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_NUM_INSTALMENT_NUMBER",
+  "definition": "MEAN(payments.AMT_INSTALMENT / NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_AMT_INSTALMENT",
+  "definition": "MEAN(payments.AMT_PAYMENT / AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_NUM_INSTALMENT_NUMBER",
+  "definition": "MEAN(payments.AMT_PAYMENT / NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NATURAL_LOGARITHM_AMT_INSTALMENT",
+  "definition": "MEAN(payments.NATURAL_LOGARITHM(AMT_INSTALMENT))",
+  "base_columns": [
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NATURAL_LOGARITHM_AMT_PAYMENT",
+  "definition": "MEAN(payments.NATURAL_LOGARITHM(AMT_PAYMENT))",
+  "base_columns": [
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NATURAL_LOGARITHM_NUM_INSTALMENT_NUMBER",
+  "definition": "MEAN(payments.NATURAL_LOGARITHM(NUM_INSTALMENT_NUMBER))",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_AMT_INSTALMENT",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER / AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_AMT_PAYMENT",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER / AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "COUNT_payments_div_MAX_payments_AMT_INSTALMENT",
+  "definition": "COUNT(payments) / MAX(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "COUNT_payments_div_MAX_payments_AMT_PAYMENT",
+  "definition": "COUNT(payments) / MAX(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "COUNT_payments_div_MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "COUNT(payments) / MAX(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "COUNT_payments_div_MEAN_payments_AMT_INSTALMENT",
+  "definition": "COUNT(payments) / MEAN(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "COUNT_payments_div_MEAN_payments_AMT_PAYMENT",
+  "definition": "COUNT(payments) / MEAN(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "COUNT_payments_div_MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "COUNT(payments) / MEAN(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "COUNT_payments_div_age",
+  "definition": "COUNT(payments) / age",
+  "base_columns": [
+   "clients.age",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "COUNT_payments_div_credit_amount",
+  "definition": "COUNT(payments) / credit_amount",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "COUNT_payments_div_duration",
+  "definition": "COUNT(payments) / duration",
+  "base_columns": [
+   "clients.duration",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_COUNT_payments",
+  "definition": "MAX(payments.AMT_INSTALMENT) / COUNT(payments)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_MAX_payments_AMT_PAYMENT",
+  "definition": "MAX(payments.AMT_INSTALMENT) / MAX(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MAX(payments.AMT_INSTALMENT) / MAX(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_MEAN_payments_AMT_INSTALMENT",
+  "definition": "MAX(payments.AMT_INSTALMENT) / MEAN(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_MEAN_payments_AMT_PAYMENT",
+  "definition": "MAX(payments.AMT_INSTALMENT) / MEAN(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MAX(payments.AMT_INSTALMENT) / MEAN(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_age",
+  "definition": "MAX(payments.AMT_INSTALMENT) / age",
+  "base_columns": [
+   "clients.age",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_credit_amount",
+  "definition": "MAX(payments.AMT_INSTALMENT) / credit_amount",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_INSTALMENT_div_duration",
+  "definition": "MAX(payments.AMT_INSTALMENT) / duration",
+  "base_columns": [
+   "clients.duration",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_COUNT_payments",
+  "definition": "MAX(payments.AMT_PAYMENT) / COUNT(payments)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_MAX_payments_AMT_INSTALMENT",
+  "definition": "MAX(payments.AMT_PAYMENT) / MAX(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MAX(payments.AMT_PAYMENT) / MAX(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_MEAN_payments_AMT_INSTALMENT",
+  "definition": "MAX(payments.AMT_PAYMENT) / MEAN(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_MEAN_payments_AMT_PAYMENT",
+  "definition": "MAX(payments.AMT_PAYMENT) / MEAN(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MAX(payments.AMT_PAYMENT) / MEAN(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_age",
+  "definition": "MAX(payments.AMT_PAYMENT) / age",
+  "base_columns": [
+   "clients.age",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_credit_amount",
+  "definition": "MAX(payments.AMT_PAYMENT) / credit_amount",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_AMT_PAYMENT_div_duration",
+  "definition": "MAX(payments.AMT_PAYMENT) / duration",
+  "base_columns": [
+   "clients.duration",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_COUNT_payments",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER) / COUNT(payments)",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_MAX_payments_AMT_INSTALMENT",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER) / MAX(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_MAX_payments_AMT_PAYMENT",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER) / MAX(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_MEAN_payments_AMT_INSTALMENT",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER) / MEAN(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_MEAN_payments_AMT_PAYMENT",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER) / MEAN(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER) / MEAN(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_age",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER) / age",
+  "base_columns": [
+   "clients.age",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_credit_amount",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER) / credit_amount",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MAX_payments_NUM_INSTALMENT_NUMBER_div_duration",
+  "definition": "MAX(payments.NUM_INSTALMENT_NUMBER) / duration",
+  "base_columns": [
+   "clients.duration",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_COUNT_payments",
+  "definition": "MEAN(payments.AMT_INSTALMENT) / COUNT(payments)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_MAX_payments_AMT_INSTALMENT",
+  "definition": "MEAN(payments.AMT_INSTALMENT) / MAX(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_MAX_payments_AMT_PAYMENT",
+  "definition": "MEAN(payments.AMT_INSTALMENT) / MAX(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MEAN(payments.AMT_INSTALMENT) / MAX(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_MEAN_payments_AMT_PAYMENT",
+  "definition": "MEAN(payments.AMT_INSTALMENT) / MEAN(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MEAN(payments.AMT_INSTALMENT) / MEAN(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_age",
+  "definition": "MEAN(payments.AMT_INSTALMENT) / age",
+  "base_columns": [
+   "clients.age",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_credit_amount",
+  "definition": "MEAN(payments.AMT_INSTALMENT) / credit_amount",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_INSTALMENT_div_duration",
+  "definition": "MEAN(payments.AMT_INSTALMENT) / duration",
+  "base_columns": [
+   "clients.duration",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_COUNT_payments",
+  "definition": "MEAN(payments.AMT_PAYMENT) / COUNT(payments)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_MAX_payments_AMT_INSTALMENT",
+  "definition": "MEAN(payments.AMT_PAYMENT) / MAX(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_MAX_payments_AMT_PAYMENT",
+  "definition": "MEAN(payments.AMT_PAYMENT) / MAX(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MEAN(payments.AMT_PAYMENT) / MAX(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_MEAN_payments_AMT_INSTALMENT",
+  "definition": "MEAN(payments.AMT_PAYMENT) / MEAN(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MEAN(payments.AMT_PAYMENT) / MEAN(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_age",
+  "definition": "MEAN(payments.AMT_PAYMENT) / age",
+  "base_columns": [
+   "clients.age",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_credit_amount",
+  "definition": "MEAN(payments.AMT_PAYMENT) / credit_amount",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_AMT_PAYMENT_div_duration",
+  "definition": "MEAN(payments.AMT_PAYMENT) / duration",
+  "base_columns": [
+   "clients.duration",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_COUNT_payments",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER) / COUNT(payments)",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_MAX_payments_AMT_INSTALMENT",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER) / MAX(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_MAX_payments_AMT_PAYMENT",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER) / MAX(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER) / MAX(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_MEAN_payments_AMT_INSTALMENT",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER) / MEAN(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "payments.AMT_INSTALMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_MEAN_payments_AMT_PAYMENT",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER) / MEAN(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "payments.AMT_PAYMENT",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_age",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER) / age",
+  "base_columns": [
+   "clients.age",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_credit_amount",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER) / credit_amount",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "MEAN_payments_NUM_INSTALMENT_NUMBER_div_duration",
+  "definition": "MEAN(payments.NUM_INSTALMENT_NUMBER) / duration",
+  "base_columns": [
+   "clients.duration",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "age_div_COUNT_payments",
+  "definition": "age / COUNT(payments)",
+  "base_columns": [
+   "clients.age",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "age_div_MAX_payments_AMT_INSTALMENT",
+  "definition": "age / MAX(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "clients.age",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "age_div_MAX_payments_AMT_PAYMENT",
+  "definition": "age / MAX(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "clients.age",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "age_div_MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "age / MAX(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "clients.age",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "age_div_MEAN_payments_AMT_INSTALMENT",
+  "definition": "age / MEAN(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "clients.age",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "age_div_MEAN_payments_AMT_PAYMENT",
+  "definition": "age / MEAN(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "clients.age",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "age_div_MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "age / MEAN(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "clients.age",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "credit_amount_div_COUNT_payments",
+  "definition": "credit_amount / COUNT(payments)",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "credit_amount_div_MAX_payments_AMT_INSTALMENT",
+  "definition": "credit_amount / MAX(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "credit_amount_div_MAX_payments_AMT_PAYMENT",
+  "definition": "credit_amount / MAX(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "credit_amount_div_MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "credit_amount / MAX(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "credit_amount_div_MEAN_payments_AMT_INSTALMENT",
+  "definition": "credit_amount / MEAN(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "credit_amount_div_MEAN_payments_AMT_PAYMENT",
+  "definition": "credit_amount / MEAN(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "credit_amount_div_MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "credit_amount / MEAN(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "clients.credit_amount",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "duration_div_COUNT_payments",
+  "definition": "duration / COUNT(payments)",
+  "base_columns": [
+   "clients.duration",
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "duration_div_MAX_payments_AMT_INSTALMENT",
+  "definition": "duration / MAX(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "clients.duration",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "duration_div_MAX_payments_AMT_PAYMENT",
+  "definition": "duration / MAX(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "clients.duration",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "duration_div_MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "duration / MAX(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "clients.duration",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "duration_div_MEAN_payments_AMT_INSTALMENT",
+  "definition": "duration / MEAN(payments.AMT_INSTALMENT)",
+  "base_columns": [
+   "clients.duration",
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "duration_div_MEAN_payments_AMT_PAYMENT",
+  "definition": "duration / MEAN(payments.AMT_PAYMENT)",
+  "base_columns": [
+   "clients.duration",
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "duration_div_MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "duration / MEAN(payments.NUM_INSTALMENT_NUMBER)",
+  "base_columns": [
+   "clients.duration",
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "NATURAL_LOGARITHM_COUNT_payments",
+  "definition": "NATURAL_LOGARITHM(COUNT(payments))",
+  "base_columns": [
+   "payments.payment_id"
+  ]
+ },
+ {
+  "name": "NATURAL_LOGARITHM_MAX_payments_AMT_INSTALMENT",
+  "definition": "NATURAL_LOGARITHM(MAX(payments.AMT_INSTALMENT))",
+  "base_columns": [
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "NATURAL_LOGARITHM_MAX_payments_AMT_PAYMENT",
+  "definition": "NATURAL_LOGARITHM(MAX(payments.AMT_PAYMENT))",
+  "base_columns": [
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "NATURAL_LOGARITHM_MAX_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "NATURAL_LOGARITHM(MAX(payments.NUM_INSTALMENT_NUMBER))",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ },
+ {
+  "name": "NATURAL_LOGARITHM_MEAN_payments_AMT_INSTALMENT",
+  "definition": "NATURAL_LOGARITHM(MEAN(payments.AMT_INSTALMENT))",
+  "base_columns": [
+   "payments.AMT_INSTALMENT"
+  ]
+ },
+ {
+  "name": "NATURAL_LOGARITHM_MEAN_payments_AMT_PAYMENT",
+  "definition": "NATURAL_LOGARITHM(MEAN(payments.AMT_PAYMENT))",
+  "base_columns": [
+   "payments.AMT_PAYMENT"
+  ]
+ },
+ {
+  "name": "NATURAL_LOGARITHM_MEAN_payments_NUM_INSTALMENT_NUMBER",
+  "definition": "NATURAL_LOGARITHM(MEAN(payments.NUM_INSTALMENT_NUMBER))",
+  "base_columns": [
+   "payments.NUM_INSTALMENT_NUMBER"
+  ]
+ }
+]

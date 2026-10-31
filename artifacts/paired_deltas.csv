@@ -1,0 +1,9 @@
+порівняння,ΔAUC,95% CI,p (Δ ≤ 0)
+1. Baseline [LR] − 0. Non-ML Heuristic [—],0.11005291005291007,+0.055…+0.167,0.0
+1. Baseline [RF] − 0. Non-ML Heuristic [—],0.08425925925925937,+0.028…+0.141,0.0035
+2. Manual FE [LR] − 1. Baseline [LR],-0.020158730158730154,-0.039…-0.001,0.9775
+3. Extracted + AutoFE [LR] − 1. Baseline [LR],-0.03925925925925933,-0.071…-0.004,0.9855
+4. Leaky Pipeline [LR] − 3. Extracted + AutoFE [LR],0.10015873015873022,+0.056…+0.144,0.0
+2. Manual FE [RF] − 1. Baseline [RF],0.01515873015873015,-0.006…+0.037,0.0805
+3. Extracted + AutoFE [RF] − 1. Baseline [RF],-0.017142857142857126,-0.065…+0.030,0.7635
+4. Leaky Pipeline [RF] − 3. Extracted + AutoFE [RF],0.059285714285714275,+0.001…+0.120,0.023

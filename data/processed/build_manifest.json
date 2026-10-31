@@ -1,0 +1,31 @@
+{
+  "rows": 1000,
+  "columns": 173,
+  "tabular_sha256": "94ccbae4b4dffc58f7c976732f3e274165ced549e20398f222dc36b5c8d15d48",
+  "text_corpus": {
+    "pool_size": 3678,
+    "sample_size": 1000,
+    "seed": 42,
+    "sample_sha256": "75000137cea8abe2712ff24e678ff89df87e9c47cd6a5b27a3b67b9773cc94f5",
+    "empty_after_cleaning": 0
+  },
+  "payments": {
+    "clients": 1000,
+    "events": 40010,
+    "clients_without_events": 18
+  },
+  "signal_report": {
+    "total": 1000,
+    "empty": 18,
+    "too_short": 3,
+    "padded": 305,
+    "nonfinite_removed": 3
+  },
+  "dfs": {
+    "input_features": 23,
+    "output_features": 147,
+    "new_features": 129,
+    "infinite_replaced_by_nan": 79
+  },
+  "dataset_sha256": "f78c76d04368da9b149613d5c3ef2a8b432eb18ae41a3bd3823da4683f37c43a"
+}
